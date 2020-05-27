@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="pt-br" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Desafio Física</title>  
+
+  <script type="text/javascript" src="js/index.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  
+  </head>
+
+<body>
+  <header>
+    <h1>Operação com vetores</h1>
+  </header>
+
+  <svg id="canvas-svg" width="700" height="400" >
+      
+    <line x1="49.5" y1="0" x2="49.5" y2="400"/>
+    <line x1="99.5" y1="0" x2="99.5" y2="400"/>
+    <line x1="149.5" y1="0" x2="149.5" y2="400"/>
+    <line x1="199.5" y1="0" x2="199.5" y2="400"/>
+    <line x1="249.5" y1="0" x2="249.5" y2="400"/>
+    <line x1="299.5" y1="0" x2="299.5" y2="400"/>
+    <line x1="349.5" y1="0" x2="349.5" y2="400"/>
+    <line x1="399.5" y1="0" x2="399.5" y2="400"/>
+    <line x1="449.5" y1="0" x2="449.5" y2="400"/>
+    <line x1="499.5" y1="0" x2="499.5" y2="400"/>
+    <line x1="549.5" y1="0" x2="549.5" y2="400"/>
+    <line x1="599.5" y1="0" x2="599.5" y2="400"/>
+    <line x1="649.5" y1="0" x2="649.5" y2="400"/>
+    <line x1="0" y1="49.5" x2="700" y2="49.5"/>
+    <line x1="0" y1="99.5" x2="700" y2="99.5"/>
+    <line x1="0" y1="149.5" x2="700" y2="149.5"/>
+    <line x1="0" y1="199.5" x2="700" y2="199.5"/>
+    <line x1="0" y1="249.5" x2="700" y2="249.5"/>
+    <line x1="0" y1="299.5" x2="700" y2="299.5"/>
+    <line x1="0" y1="349.5" x2="700" y2="349.5"/>
+
+    <line id="lAB" class="lAB" x1="0" y1="0" x2="215" y2="125" stroke-width = "3"/>    
+
+    <line id="lBC" class="lBC" x1="349.5" y1="0" x2="215" y2="125" stroke-width = "3"/>
+ 
+
+    <rect id="rectssvg" x="200" y="125" width="30" height="30"/>
+  
+    <circle id="c1" cx="50" cy="50" r="5" fill="red" stroke="black"/>
+    <circle id="c2" cx="50" cy="50" r="5" fill="red" stroke="black"/>
+  
+  </svg>
+
+  <div class="card">
+<br/>
+  <label>
+    Digite a Massa da caixa em Kg:  <input type="number" id="massa" value="0" min="0" onchange="a()">
+  </label>
+          
+  <label>
+    Peso:  <input type="text" id="peso" value="-" readOnly = "true" >
+ </label>
+
+<label>Movimenta a caixa no eixo X: </label>
+  <input id="sliderX" type="range" min="1" max="165" value="0" onchange="moveSlider(this, 'x')">
+  <input type="text" id="vx" value="-" readOnly = "true"/>
+
+  <label>Movimenta a caixa no eixo Y: </label>
+ <input id="sliderY" type="range" min="1" max="89" value="0" onchange="moveSlider(this, 'y')">
+  <input type="text" id="vy" value="-" readOnly = "true"/>
+
+
+<label>Movimenta o topo da barra 1 no eixo X: </label>
+  <input id="sliderX2" type="range" min="0" max="81" value="0" onchange="moveSlider(this, 'x1')">
+
+<label>Movimenta o topo da barra 2 no eixo X: </label>
+  <input id="sliderX3" type="range" min="81" max="169" value="0" onchange="moveSlider(this, 'x1')">
+
+<label>
+  Comprimento Barra 1:  <input type="text" id="cl1" value="-" readOnly = "true" >
+</label>
+
+<label>
+  Comprimento barra 2:  <input type="text" id="cl2" value="-" readOnly = "true" >
+</label>
+
+<label>
+Ângulo barra 1:  <input type="text" id="test2" value="-" readOnly = "true" >
+</label>
+<label>
+  Ângulo barra 2:  <input type="text" id="test3" value="-" readOnly = "true" >
+  </label>
+
+<label>
+  Força na barra 1 em N:  <input type="text" id="forca1" value="-" readOnly = "true" >
+</label>
+
+<label>
+  Força na barra 2 em N:  <input type="text" id="forca2" value="-" readOnly = "true" >
+</label>
+<br/>
+  </div>
+
+  <label style="position: static; top: 590px;">
+      Observação: Para ligar as barras a caixa, atribua valores no eixo X e Y para a caixa.  /  Erro relativo nos valores das Forças. / Gravidade 9,81 m/s^2.
+  </label>
+
+</body>
+
+</html>

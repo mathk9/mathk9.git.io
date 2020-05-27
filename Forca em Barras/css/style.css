@@ -1,0 +1,71 @@
+body{  
+  max-height: 90px;
+  max-width: 100%;
+    background:
+      linear-gradient(135deg, hsla(342.82, 92.54%, 48.61%, 1) 0%, hsla(342.82, 92.54%, 48.61%, 0) 70%),
+      linear-gradient(25deg, hsla(89.87, 96.15%, 49.98%, 1) 10%, hsla(89.87, 96.15%, 49.98%, 0) 80%),
+      linear-gradient(315deg, hsla(32.16, 95.04%, 42.83%, 1) 15%, hsla(32.16, 95.04%, 42.83%, 0) 80%),
+      linear-gradient(245deg, hsla(344.9, 95.81%, 49.56%, 1) 100%, hsla(344.9, 95.81%, 49.56%, 0) 70%);    
+}
+
+svg{
+  position: absolute;
+    top:10%;
+    left:40%;
+
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    
+      background:
+        -webkit-linear-gradient(315deg, hsla(252.64, 98.41%, 45.98%, 1) 0%, hsla(252.64, 98.41%, 45.98%, 0) 70%),
+        -webkit-linear-gradient(65deg, hsla(123.23, 93.27%, 46.09%, 1) 10%, hsla(123.23, 93.27%, 46.09%, 0) 80%),
+        -webkit-linear-gradient(135deg, hsla(245.51, 96.39%, 48.66%, 1) 15%, hsla(245.51, 96.39%, 48.66%, 0) 80%),
+        -webkit-linear-gradient(205deg, hsla(175.84, 93.88%, 42.44%, 1) 100%, hsla(175.84, 93.88%, 42.44%, 0) 70%);
+      background:
+        linear-gradient(135deg, hsla(252.64, 98.41%, 45.98%, 1) 0%, hsla(252.64, 98.41%, 45.98%, 0) 70%),
+        linear-gradient(25deg, hsla(123.23, 93.27%, 46.09%, 1) 10%, hsla(123.23, 93.27%, 46.09%, 0) 80%),
+        linear-gradient(315deg, hsla(245.51, 96.39%, 48.66%, 1) 15%, hsla(245.51, 96.39%, 48.66%, 0) 80%),
+        linear-gradient(245deg, hsla(175.84, 93.88%, 42.44%, 1) 100%, hsla(175.84, 93.88%, 42.44%, 0) 70%);        
+  }
+
+line {
+  stroke: #000000;
+}
+line.lAB{
+  stroke: #74ff02;
+  transition: all .50s;
+}
+line.lBC{
+  stroke: #74ff02;
+  transition: all .50s;
+}
+
+rect {
+  fill: #05dc94;
+  fill-opacity: 0.4;
+  stroke: #05dc94;
+  stroke-width: 5px;
+  transition: all .5s;
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  transition: 0.3s;
+  width: 20%; 
+  background: #624c7e;
+
+  position: relative;
+    top:50%;
+    left:10%;
+
+}
